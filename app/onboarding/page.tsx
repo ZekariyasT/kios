@@ -11,12 +11,7 @@ import {
 } from "@/lib/onboarding-slides";
 import {
   imgCityscapeBackground,
-  imgTranslateG1,
-  imgTranslateG2,
-  imgTranslateG3,
-  imgTranslateG4,
-  imgTranslateG5,
-  imgTranslateG6,
+  imgTranslateIcon,
 } from "@/lib/onboarding-assets";
 
 /**
@@ -127,30 +122,11 @@ export default function OnboardingWelcomePage() {
 
       {/* Translate icon */}
       <div
-        className="absolute overflow-hidden"
+        className="absolute"
         style={{ top: "3%", right: "2.7%", width: "2.68%", aspectRatio: "1/1" }}
         aria-label="Translate"
       >
-        <div className="absolute inset-0">
-          <div className="absolute" style={{ inset: "65.99% 24.72% 25.85% 67.12%" }}>
-            <Image src={imgTranslateG1} alt="" fill unoptimized />
-          </div>
-          <div className="absolute" style={{ inset: "30.68% 0 0 42.4%" }}>
-            <Image src={imgTranslateG2} alt="" fill unoptimized />
-          </div>
-          <div className="absolute" style={{ inset: "24.68% 68.42% 68.01% 26.03%" }}>
-            <Image src={imgTranslateG3} alt="" fill unoptimized />
-          </div>
-          <div className="absolute" style={{ inset: "0 42.4% 30.68% 0" }}>
-            <Image src={imgTranslateG4} alt="" fill unoptimized />
-          </div>
-          <div className="absolute" style={{ inset: "0 0.06% 64.74% 64.68%" }}>
-            <Image src={imgTranslateG5} alt="" fill unoptimized />
-          </div>
-          <div className="absolute" style={{ inset: "64.68% 64.74% 0.06% 0" }}>
-            <Image src={imgTranslateG6} alt="" fill unoptimized />
-          </div>
-        </div>
+        <Image src={imgTranslateIcon} alt="" fill unoptimized />
       </div>
     </div>
   );
